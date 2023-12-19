@@ -24,13 +24,6 @@ tab.forEach(function (item, index) {
 })
 
 function checkClick() {
-    let allAccordionsClicked = true;
-    tab.forEach(function (item) {
-        if (!item.classList.contains('checked')) {
-            allAccordionsClicked = false;
-        }
-    });
-    if (allAccordionsClicked) {
-        btn.disabled = false;
-    }
+    const checked = document.querySelectorAll('.tab.checked ').length;
+    tab.length === checked ? btn.disabled = false : '';
 }
