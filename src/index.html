@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <button class="header__btn_logo"><img src="img/logo.svg" class="header__logo" alt="logo"></button>
+                <p class="header__title">Текст</p>
+            </nav>
+        </div>
+        <hr class="header__hr_green">        
+        <hr class="header__hr_red">
+        <hr class="header__hr_bold_red">
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="main__title">Аккардион</h1>
+            <div class="tabs">
+                <div class="tab">
+                    <hr class="red_line">
+                    <div class="tab__head">
+                        <h1 class="tab__title">Таб 1</h1>
+                        <img src="img/arrow.svg" alt="arrow" class="tab__arrow">
+                    </div>
+                    <div class="tab__accordion hidden">
+                        <hr class="dividing_line">
+                        <ul>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 1</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 2</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 3</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 4</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 4</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 5</p></li>
+                        </ul>
+                    </div>
+                    <hr class="red_line">
+                </div>
+                <div class="tab">
+                    <div class="tab__head">
+                        <h1 class="tab__title">Таб 2</h1>
+                        <img src="img/arrow.svg" alt="arrow" class="tab__arrow">
+                    </div>
+                    <div class="tab__accordion hidden">
+                        <hr class="dividing_line">
+                        <ul>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 1</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 2</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 3</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 4</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 4</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 5</p></li>
+                        </ul>
+                    </div>
+                    <hr class="red_line">
+                </div>
+                <div class="tab">
+                    <div class="tab__head">
+                        <h1 class="tab__title">Таб 3</h1>
+                        <img src="img/arrow.svg" alt="arrow" class="tab__arrow">
+                    </div>
+                    <div class="tab__accordion hidden">
+                        <hr class="dividing_line">
+                        <ul>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 1</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 2</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 3</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 4</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 4</p></li>
+                            <li><p class="main__btn_answer"><span class="points">–</span>Элемент 5</p></li>
+                        </ul>
+                    </div>
+                    <hr class="red_line">
+                </div>
+            </div>
+            <button class="main__btn_continue" id="btn" disabled>Продолжить</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <hr class="footer__green">
+        <hr class="footer__red">
+    </footer>
+</body>
+</html>
