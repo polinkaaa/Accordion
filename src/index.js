@@ -4,7 +4,7 @@ import './styles/main.scss';
 const accordion = document.querySelectorAll(".tab__accordion"),
 tab = document.querySelectorAll(".tab"),
 arrow = document.querySelectorAll(".tab__arrow"),
-btn = document.getElementById('btn');
+btn = document.querySelector('.main__btn_continue');
 
 tab.forEach(function (item, index) {
     item.addEventListener("click", function () {
@@ -23,14 +23,12 @@ tab.forEach(function (item, index) {
     })
 })
 
-
 function checkClick() {
     let allAccordionsClicked = true;
     tab.forEach(function (item) {
         if (!item.classList.contains('checked')) {
             allAccordionsClicked = false;
         }
-        console.log(allAccordionsClicked)
     });
     if (allAccordionsClicked) {
         btn.disabled = false;
