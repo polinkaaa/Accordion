@@ -132,6 +132,38 @@
         left: 2px;
         bottom: 4px;
     }
+    &__accordion {
+        display: none;
+    }
+    &__accordion.is-visible {
+        display: block;
+        animation: fadeInFromNone 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    &__accordion.is-hidden {
+        animation: fadeOutFromBlock 0.5s ease-in-out;
+    }
+
+    @keyframes fadeInFromNone {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes fadeOutFromBlock {
+        0% {
+          opacity: 1;
+        }
+      
+        100% {
+          opacity: 0;
+        }
+      }
+
 }
 
 ul {
@@ -163,8 +195,9 @@ ul {
 }
 
 .hidden {
-    display: none;
+   // display: none;
 }
+
 
 /* footer */
 .footer {
