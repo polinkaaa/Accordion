@@ -152,9 +152,9 @@
         100% {
           opacity: 1;
         }
-      }
+    }
       
-      @keyframes fadeOutFromBlock {
+    @keyframes fadeOutFromBlock {
         0% {
           opacity: 1;
         }
@@ -162,8 +162,7 @@
         100% {
           opacity: 0;
         }
-      }
-
+    }
 }
 
 ul {
@@ -193,11 +192,6 @@ ul {
     border: none;
     height: 1px;
 }
-
-.hidden {
-   // display: none;
-}
-
 
 /* footer */
 .footer {
